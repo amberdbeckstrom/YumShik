@@ -9,13 +9,13 @@
             url: "/kimchi",
             templateUrl: "kimchi.html"
         })
-          // .state('route1.list', {
-          //     url: "/list",
-          //     templateUrl: "route1.list.html",
-          //     controller: function($scope){
-          //       $scope.items = ["A", "List", "Of", "Items"];
-          //     }
-          // })
+          .state('kimchi.more', {
+              url: "/more",
+              templateUrl: "kimchi.more.html",
+              // controller: function($scope){
+              //   $scope.items = ["A", "List", "Of", "Items"];
+              // }
+          })
           
         .state('kalbi', {
             url: "/kalbi",
