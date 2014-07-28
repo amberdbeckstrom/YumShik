@@ -6,16 +6,16 @@
 
 
       // For any unmatched url, send to /route1
-      $urlRouterProvider.otherwise("views/home")
+      $urlRouterProvider.otherwise("/home")
       
       $stateProvider
         .state('kimchi', {
             url: "/kimchi",
-            templateUrl: "views/kimchi.html"
+            templateUrl: "kimchi.html"
         })
           .state('kimchi.more', {
               url: "/more",
-              templateUrl: "views/kimchi.more.html",
+              templateUrl: "kimchi.more.html",
               // controller: function($scope){
               //   $scope.items = ["A", "List", "Of", "Items"];
               // }
@@ -23,11 +23,11 @@
           
         .state('kalbi', {
             url: "/kalbi",
-            templateUrl: "views/kalbi.html"
+            templateUrl: "kalbi.html"
         })
           .state('kalbi.more', {
               url: "/more",
-              templateUrl: "views/kalbi.more.html",
+              templateUrl: "kalbi.more.html",
           //     controller: function($scope){
           //       $scope.things = ["A", "Set", "Of", "Things"];
           //     }
@@ -35,7 +35,7 @@
 
           .state('home', {
               url: "/home",
-              templateUrl: "views/home.html"
+              templateUrl: "home.html"
           })
 
 
