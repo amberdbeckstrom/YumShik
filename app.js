@@ -1,4 +1,4 @@
- var yumShik = angular.module('yumShik', ["ui.router"])
+ var yumShik = angular.module('yumShik', ["ui.router", 'ui.bootstrap'])
     yumShik.config(function($stateProvider, $urlRouterProvider){
       
       // For any unmatched url, send to /route1
@@ -7,11 +7,11 @@
       $stateProvider
         .state('kimchi', {
             url: "/kimchi",
-            templateUrl: "kimchi.html"
+            templateUrl: "views/kimchi.html"
         })
           .state('kimchi.more', {
               url: "/more",
-              templateUrl: "kimchi.more.html",
+              templateUrl: "views/kimchi.more.html",
               // controller: function($scope){
               //   $scope.items = ["A", "List", "Of", "Items"];
               // }
@@ -19,11 +19,11 @@
           
         .state('kalbi', {
             url: "/kalbi",
-            templateUrl: "kalbi.html"
+            templateUrl: "views/kalbi.html"
         })
-          // .state('route2.list', {
-          //     url: "/list",
-          //     templateUrl: "route2.list.html",
+          .state('kalbi.more', {
+              url: "/more",
+              templateUrl: "views/kalbi.more.html",
           //     controller: function($scope){
           //       $scope.things = ["A", "Set", "Of", "Things"];
           //     }
@@ -31,7 +31,7 @@
 
           .state('home', {
               url: "/home",
-              templateUrl: "home.html"
+              templateUrl: "views/home.html"
           })
 
 
