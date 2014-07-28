@@ -1,8 +1,12 @@
- var yumShik = angular.module('yumShik', ["ui.router", 'ui.bootstrap'])
+ var yumShik = angular.module('yumShik', ["ui.router"])
     yumShik.config(function($stateProvider, $urlRouterProvider){
       
+     
+
+
+
       // For any unmatched url, send to /route1
-      $urlRouterProvider.otherwise("/home")
+      $urlRouterProvider.otherwise("views/home")
       
       $stateProvider
         .state('kimchi', {
